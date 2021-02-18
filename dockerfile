@@ -13,7 +13,7 @@ COPY package.json /usr/src/app
 RUN npm install
  
 # Copies everything over to Docker environment
-COPY . .
+COPY . /usr/src/app
  
 # Uses port which is used by the actual application
 EXPOSE 3000
