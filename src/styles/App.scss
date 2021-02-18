@@ -1,0 +1,9 @@
+// Keep all styles in same sheet to allow components to access to them everywhere
+@import './variables';
+@import './searchBox';
+@import './results';
+@import './product';
+
+html, body {
+    background-color: $meli-light-grey;
+}

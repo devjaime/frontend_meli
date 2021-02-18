@@ -1,0 +1,76 @@
+.product-container {
+    margin: 0px 12% 70px 10%;
+    background-color: $white;
+
+    .product-card {
+        display: grid; 
+        grid-template-columns: min-content auto;
+
+        img {
+            width: 680px;
+        }
+
+        .product-info {
+
+            padding-left: 20%;
+
+            .product-state {
+                padding: 32px 0px 16px 0px;
+                font-size: 14px;
+            }
+
+            .product-name {
+                font-size: 32px;
+                padding-right: 10px;
+            }
+
+            .product-price {
+                padding: 32px 0px 32px 0px;
+                font-size: 48px;
+
+                img {
+                    width: auto;
+                    padding-left: 10px;
+                }
+            }
+
+            .buy-button-container {
+                padding-right: 32px;
+            }
+
+            button {
+                color: $white;
+                background-color: $meli-blue;
+                height: 40px;
+                border-radius: 4px;
+                border: none;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .product-description {
+        .title {
+            padding: 32px 0px 32px 32px;
+            font-size: 28px;
+        }
+
+        .description {
+            padding: 0px 0px 32px 32px;
+            color: $meli-grey;
+            font-size: 16px;
+            width: 680px;
+        }
+    }
+}
+
+.item-categories-container {
+    margin: 16px;
+    font-size: 14px; 
+    color: $meli-dark-grey;
+    padding-left: 10%;
+}
+
+
+

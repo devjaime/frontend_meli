@@ -1,0 +1,38 @@
+.header {
+    background-color: $meli-yellow;
+    div {
+        display: flex;
+        align-items: center;
+        padding: 10px 12% 10px 10%;
+        justify-content: center;
+        flex-direction: row;
+
+        form {
+            display: inline-flex;
+            width: 100%;
+        }
+        
+        input {
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            // avoid border appearence when input has been clicked
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: $meli-light-grey;
+            padding: 11px 10px 10px 10px;
+            cursor: pointer;
+            border: none;
+        }
+    }
+}
+
+.meli-logo {
+    padding-right: 20px;
+    cursor: pointer; //let the user know that this image is clickable
+}
