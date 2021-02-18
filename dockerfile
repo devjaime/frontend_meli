@@ -7,7 +7,7 @@ FROM node:latest
 WORKDIR /usr/src/app
  
 # Copies package.json and package-lock.json to Docker environment
-COPY package*.json ./
+COPY package.json /usr/src/app©
  
 # Installs all node packages
 RUN npm install
