@@ -4,7 +4,8 @@ import { formatCurrency } from '../utils/misc/formatter';
 import loader from '../assets/loader.gif';
 import iconShipping from '../assets/images/ic_shipping.png';
 
-function Product(props) {
+export const Product = (props) => {
+
     const itemId = props.match.params.id;
 
     const propsState = props.location.state
@@ -14,7 +15,6 @@ function Product(props) {
     const [product, setProduct] = useState({});
 
     const getItem = useGetProduct(itemId);
-
     useEffect(() => {
         if (getItem.response) setProduct(getItem.response);
     }, [getItem.response]);

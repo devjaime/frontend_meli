@@ -7,8 +7,7 @@ import iconSearch from '../assets/images/ic_search.png';
 function useQuery() {
 	return new URLSearchParams(useLocation().search);
 }
-
-function SerachBox() {
+export const SearchBox = () => {
     const firstRender = useRef(true);
     const history = useHistory();
 
@@ -68,4 +67,4 @@ function SerachBox() {
     );
 }
 
-export default SerachBox;
+export default SearchBox;

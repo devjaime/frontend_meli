@@ -1,10 +1,8 @@
 import React from 'react';
 import SearchBox from '../components/SearchBox';
-
-function Home() {
+export const Home = () => {
     return (
         <SearchBox />
     );
 }
-
 export default Home;

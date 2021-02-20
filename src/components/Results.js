@@ -9,10 +9,9 @@ function useQuery() {
     return new URLSearchParams(useLocation().search);
 }
 
-function Results() {
+export const Results = () => {
     const [results, setResults] = useState([]);
     const history = useHistory();
-
     let query = useQuery();
     let searchQuery = query.get("search");
 

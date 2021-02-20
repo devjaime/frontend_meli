@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <Results/> should display the component correctly 1`] = `
+Array [
+  <div>
+    <div
+      className="loader"
+    >
+      <img
+        alt="loader"
+        src="loader.gif"
+      />
+    </div>
+  </div>,
+  "",
+]
+`;
+
+exports[`Test in <Results/> should display the component correctly 2`] = `
+Object {
+  "action": "POP",
+  "block": [Function],
+  "canGo": [Function],
+  "createHref": [Function],
+  "entries": Array [
+    Object {
+      "hash": "",
+      "key": "dfj8yd",
+      "pathname": "/",
+      "search": "",
+      "state": undefined,
+    },
+  ],
+  "go": [Function],
+  "goBack": [Function],
+  "goForward": [Function],
+  "index": 0,
+  "length": 1,
+  "listen": [Function],
+  "location": Object {
+    "hash": "",
+    "key": "dfj8yd",
+    "pathname": "/",
+    "search": "",
+    "state": undefined,
+  },
+  "push": [Function],
+  "replace": [Function],
+}
+`;
+
+exports[`Test in <Results/> should display the component correctly 3`] = `
+Object {
+  "hash": "",
+  "key": "dfj8yd",
+  "pathname": "/",
+  "search": "",
+  "state": undefined,
+}
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <Product/> should display the component correctly 1`] = `
+<div>
+  <div
+    className="loader"
+  >
+    <img
+      alt="loader"
+      src="loader.gif"
+    />
+  </div>
+</div>
+`;

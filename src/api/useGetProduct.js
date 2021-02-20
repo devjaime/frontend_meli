@@ -1,8 +1,10 @@
 import axios from 'axios';
+import PropTypes from 'prop-types';  
 import { useEffect, useState } from 'react';
-import env from "react-dotenv"; 
+ 
+const api_base = process.env.REACT_APP_API_BASE;
 
-const useGetProduct = itemId => {
+export const useGetProduct = (itemId) => {
     const [response, setResponse] = useState(null);
     const [error, setError] = useState(null);
     useEffect(() => {
@@ -13,7 +15,7 @@ const useGetProduct = itemId => {
                     'Content-Type': 'application/json'
                 }
                 const res = await axios.get(
-                    `${env.API_BASE}/api/items/${itemId}`,
+                    `${api_base}/api/items/${itemId}`,
                     options
                 );
                 const data = await res.data;
@@ -29,4 +31,7 @@ const useGetProduct = itemId => {
     return { response, error };
 }
 
+useGetProduct.prototype={
+    itemId: PropTypes.string.isRequired
+}
 export default useGetProduct;

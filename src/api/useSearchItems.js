@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import env from "react-dotenv";  
+
+const api_base = process.env.REACT_APP_API_BASE;
 
 const useSearchItems = query => {
     const [response, setResponse] = useState(null);
@@ -17,7 +18,7 @@ const useSearchItems = query => {
                 }
            
                 const res = await axios.get(
-                    `${env.API_BASE}/api/items`,
+                    `${api_base}/api/items`,
                     options
                 );
                 const data = await res.data;
