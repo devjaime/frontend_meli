@@ -19,7 +19,8 @@
         "start:development": "env-cmd -f .env.development react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --coverage",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "cypress": "cypress open --project ./src/e2e --config baseUrl=http://localhost:3000,chromeWebSecurity=false"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -37,7 +38,9 @@
         ]
     },
     "devDependencies": {
+        "@testing-library/cypress": "^7.0.3",
         "@testing-library/react-hooks": "^3.2.1",
+        "cypress": "^6.5.0",
         "enzyme": "^3.11.0",
         "enzyme-adapter-react-16": "^1.15.2",
         "enzyme-to-json": "^3.4.4"
