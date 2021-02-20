@@ -18,7 +18,7 @@
         "start": "react-scripts start",
         "start:development": "env-cmd -f .env.development react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test",
+        "test": "react-scripts test --coverage",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {

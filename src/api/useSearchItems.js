@@ -21,6 +21,7 @@ const useSearchItems = query => {
                     `${api_base}/api/items`,
                     options
                 );
+                console.log(JSON.stringify(res.data))
                 const data = await res.data;
                 
                 if (isSubscribed) setResponse(data);
