@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Results from './components/Results';
 import Product from './components/Product';
 
-function App() {
+export const  App =() => {
   return (
     <div>
       <Route component={Home} path='/' />

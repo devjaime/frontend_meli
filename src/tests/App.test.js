@@ -1,10 +1,15 @@
 import React from 'react';
-import '@testing-library/jest-dom';
+import { shallow } from "enzyme";
+import {App} from '../../src/App';
 import { mount } from "enzyme";
-import {SearchBox} from '../../components/SearchBox';
 import { MemoryRouter, Route } from "react-router-dom";
 
-describe('Test in <SearchBox/>', () => {
+describe('Test in <App/>', () => {
+    test('should display the component correctly', () => {
+        const wrapper =  shallow( <App/>)
+        expect(wrapper).toMatchSnapshot();
+    })
+
     test('should display the component correctly', () => {
         let testHistory;
         let testLocation;
@@ -12,7 +17,7 @@ describe('Test in <SearchBox/>', () => {
         let Location={"pathname":"/items","search":"?search=monitor curvo","hash":"","key":"q06uc0"};
         const wrapper = mount(
             <MemoryRouter initialEntries={[`/`]}>
-            <SearchBox />
+            <App />
             <Route
                 path={`*`}
                 render={routeProps => {

@@ -14,7 +14,6 @@ export const Results = () => {
     const history = useHistory();
     let query = useQuery();
     let searchQuery = query.get("search");
-
     const searchItems = useSearchItems(searchQuery);
     
     useEffect(() => {

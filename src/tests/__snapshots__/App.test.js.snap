@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <App/> should display the component correctly 1`] = `
+<div>
+  <Route
+    component={[Function]}
+    path="/"
+  />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/items"
+    />
+    <Route
+      component={[Function]}
+      path="/items/:id"
+    />
+  </Switch>
+</div>
+`;
+
+exports[`Test in <App/> should display the component correctly 2`] = `
+Array [
+  <div>
+    <header
+      className="header"
+    >
+      <div>
+        <img
+          alt="logo_ml"
+          className="meli-logo"
+          onClick={[Function]}
+          src="logo_ml.png"
+          title="Mercado Libre - Donde comprar y vender de todo"
+        />
+        <form
+          onSubmit={[Function]}
+        >
+          <input
+            id="serach_input"
+            name="search"
+            onChange={[Function]}
+            placeholder="Buscar productos, marcas y más"
+            type="text"
+            value=""
+          />
+          <button>
+            <img
+              alt="ic_search"
+              src="ic_search.png"
+              title="Buscar"
+            />
+          </button>
+        </form>
+      </div>
+    </header>
+  </div>,
+  "",
+]
+`;
+
+exports[`Test in <App/> should display the component correctly 3`] = `
+Object {
+  "action": "PUSH",
+  "length": 2,
+  "location": Object {
+    "hash": "",
+    "key": "q06uc0",
+    "pathname": "/items",
+    "search": "?search=monitor curvo",
+  },
+}
+`;
+
+exports[`Test in <App/> should display the component correctly 4`] = `
+Object {
+  "hash": "",
+  "key": "q06uc0",
+  "pathname": "/items",
+  "search": "?search=monitor curvo",
+}
+`;

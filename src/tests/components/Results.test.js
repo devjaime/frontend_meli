@@ -10,15 +10,16 @@ describe('Test in <Results/>', () => {
     test('should display the component correctly', () => {
         let testHistory;
         let testLocation;
-
+        let History={"length":2,"action":"PUSH","location":{"pathname":"/items","search":"?search=monitor curvo","hash":"","key":"q06uc0"}};
+        let Location={"pathname":"/items","search":"?search=monitor curvo","hash":"","key":"q06uc0"};
         const wrapper = mount(
             <MemoryRouter initialEntries={[`/`]}>
             <Results />
             <Route
                 path={`*`}
                 render={routeProps => {
-                testHistory = routeProps.history
-                testLocation = routeProps.location
+                testHistory = History
+                testLocation = Location
                 return null
                 }}/>
             </MemoryRouter>

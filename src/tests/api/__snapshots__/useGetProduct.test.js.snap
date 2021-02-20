@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in useGetProduct should display the component correctly 1`] = `
+<useGetProduct
+  itemId="MLA902105833"
+/>
+`;
