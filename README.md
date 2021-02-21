@@ -1,21 +1,23 @@
 
 # FrontEnd
-# Cloud Run Button
 
-# Deploy Amazon AWS
 
-Deploy in AWS http://18.191.132.13/
+# Deploy Amazon AWS github Actions 
 
-## Alternative
-Try it out with a "FrontEnd Mercado libre" Nodejs application ([source](https://deploy.cloud.run/?git_repo=https://github.com/devjaime/frontend_meli.git)):
+## Deploy in branch: 
+* 1 - main ([main deploy](https://main.d33ig4e4kralgx.amplifyapp.com/)):
+* 2 - staging ([staging deploy](https://staging.d33ig4e4kralgx.amplifyapp.com/)):
+* 3 - development ([development deploy](https://development.d33ig4e4kralgx.amplifyapp.com/)):
 
-[![Run on GoogleCloud](https://storage.googleapis.com/cloudrun/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/devjaime/frontend_meli.git)
 
 ## Instalation local
 
 * 1.- git clone repository
 * 2.- npm i (install dependencies)
-* 3.- npm start (servidor node public in https://backend-meli-vwl4p3oksq-uc.a.run.app or localhost:5000)
+* 3.- npm start (servidor node public in https://backend-meli-vwl4p3oksq-uc.a.run.app or localhost:5000) 
+
+## Server repository
+* github repository ([github](https://github.com/devjaime/backend_meli)) 
 
 ## Comannd
 * 1.- npm test (unit test)
