@@ -18,7 +18,7 @@
         "start": "react-scripts start",
         "start:development": "env-cmd -f .env.development react-scripts start",
         "build": "react-scripts build",
-        "test": "react-scripts test --coverage",
+        "test": "react-scripts test --watchAll=false",
         "eject": "react-scripts eject",
         "cypress": "cypress open --project ./src/e2e --config baseUrl=http://localhost:3000,chromeWebSecurity=false"
     },
