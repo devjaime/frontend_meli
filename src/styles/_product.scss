@@ -1,43 +1,31 @@
 .product-container {
     margin: 0px 12% 70px 10%;
     background-color: $white;
-
+    width: 80%;
     .product-card {
-        display: grid; 
+        display: grid;
         grid-template-columns: min-content auto;
-
-        img {
-            width: 680px;
-        }
-
         .product-info {
-
             padding-left: 20%;
-
             .product-state {
                 padding: 32px 0px 16px 0px;
-                font-size: 14px;
+                font-size: 0.8vw;
             }
-
             .product-name {
-                font-size: 32px;
+                font-size: 1vw;
                 padding-right: 10px;
             }
-
             .product-price {
                 padding: 32px 0px 32px 0px;
-                font-size: 48px;
-
+                font-size: 2vw;
                 img {
                     width: auto;
                     padding-left: 10px;
                 }
             }
-
             .buy-button-container {
                 padding-right: 32px;
             }
-
             button {
                 color: $white;
                 background-color: $meli-blue;
@@ -49,28 +37,96 @@
             }
         }
     }
-
     .product-description {
         .title {
             padding: 32px 0px 32px 32px;
-            font-size: 28px;
+            font-size: 2vw;
         }
-
         .description {
             padding: 0px 0px 32px 32px;
             color: $meli-grey;
-            font-size: 16px;
-            width: 680px;
+            font-size: 1vw;
+            height: auto;
+            word-wrap: break-word;
         }
     }
 }
 
 .item-categories-container {
     margin: 16px;
-    font-size: 14px; 
+    font-size: 14px;
     color: $meli-dark-grey;
     padding-left: 10%;
 }
 
 
+/*
+  ##Dispositivo = Desktops
+  ##Resolucion = 1281pxo mayorresolusion desktops
+*/
 
+@media (min-width: 1281px) {
+    .imgpicture {
+        width: 680px;
+    }
+}
+
+
+/*
+  ##Dispositivo = Laptops, Desktops
+  ##Resolucion = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .imgpicture {
+        width: 680px;
+    }
+}
+
+
+/*
+  ##Dispositivo = Tablets, Ipads (vertical)
+  ##Resolucion = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .imgpicture {
+        width: 200px;
+    }
+}
+
+
+/*
+  ##Dispositivo = Tablets, Ipads (horizontal)
+  ##Resolucion = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: horizontal) {
+    .imgpicture {
+        width: 200px;
+    }
+}
+
+
+/*
+  ##Dispositivo = Tablets de baja resolucion y telefnos Mobiles (horizontal)
+  ##Resolucion = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .imgpicture {
+        width: 200px;
+    }
+}
+
+
+/*
+  ##Dispositivo = Mayoria de telefonos moviles (vertical)
+  ##Resolucion = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .imgpicture {
+        width: 100px;
+    }
+}

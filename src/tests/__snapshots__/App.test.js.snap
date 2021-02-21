@@ -36,7 +36,7 @@ Array [
           <img
             alt="logo_ml"
             className="meli-logo"
-            src="logo_ml.png"
+            src="logo_ml_large_plus.png"
             title="Mercado Libre - Donde comprar y vender de todo"
           />
         </div>
@@ -44,6 +44,7 @@ Array [
           onSubmit={[Function]}
         >
           <input
+            aria-label="Buscar productos, marcas y más"
             id="serach_input"
             name="search"
             onChange={[Function]}
