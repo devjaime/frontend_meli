@@ -36,8 +36,6 @@ export const SearchBox = () => {
   };
 
   const goToHome = () => {
-    // eslint-disable-next-line no-alert
-    alert('boton busqueda');
     history.push('/');
   };
 
