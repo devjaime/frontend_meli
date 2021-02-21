@@ -47,7 +47,7 @@ export const Results = () => {
             {results && results.items && results.items.map((item) => (
               <div tabIndex={0} role="link" key={item.id} className="item-card" onClick={() => renderItem(item.id, item.category)} onKeyDown={() => renderItem(item.id, item.category)}>
                 <div className="left-side-card">
-                  <img src={item.picture} alt={item.title} />
+                  <img loading="lazy" src={item.picture} alt={item.title} />
                 </div>
                 <div className="right-side-card">
                   <div className="price-container">
@@ -66,7 +66,7 @@ export const Results = () => {
         )
         : (
           <div className="loader">
-            <img src={loader} alt="loader" />
+            <img oading="lazy" src={loader} alt="loader" />
           </div>
         )}
 

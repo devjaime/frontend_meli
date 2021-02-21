@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 
-import logoML from '../assets/images/logo_ml.png';
+import logoML from '../assets/images/logo_ml_large_plus.png';
 import iconSearch from '../assets/images/ic_search.png';
 
 function useQuery() {
@@ -56,7 +56,9 @@ export const SearchBox = () => {
           />
         </div>
         <form onSubmit={(e) => handleSubmit(e)}>
+
           <input
+            aria-label="Buscar productos, marcas y más"
             type="text"
             id="serach_input"
             name="search"

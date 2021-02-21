@@ -1,0 +1,13 @@
+test/fixtures
+**/app/public
+node_modules
+logs
+run
+coverage
+e2e
+build
+public
+**/app/assets
+src/tests
+src/setupTests.js
+jest.config.js
