@@ -1,8 +1,7 @@
 import React from 'react';
-import SearchBox from '../components/SearchBox';
-export const Home = () => {
-    return (
-        <SearchBox />
-    );
-}
+import SearchBox from './SearchBox';
+
+export const Home = () => (
+  <SearchBox />
+);
 export default Home;

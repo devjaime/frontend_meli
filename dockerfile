@@ -1,17 +1,21 @@
-# build environment
-FROM node:8-alpine as react-build
+# Stage 1
+FROM node:14.15.4-alpine as build-step
 WORKDIR /app
+ENV PATH /app/node_modules/.bin:$PATH
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm i --silent
+RUN npm i react-scripts@4.0.2 -g --silent
+
 COPY . ./
-RUN yarn
-RUN yarn build
 
-# server environment
-FROM nginx:alpine
-COPY nginx.conf /etc/nginx/conf.d/configfile.template
+RUN npm run build
 
-COPY --from=react-build /app/build /usr/share/nginx/html
+# production environment
+FROM nginx:stable-alpine
+COPY --from=build /app/build /usr/share/nginx/html
+# new
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
 
-ENV PORT 8080
-ENV HOST 0.0.0.0
-EXPOSE 8080
-CMD sh -c "envsubst '\$PORT' < /etc/nginx/conf.d/configfile.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
