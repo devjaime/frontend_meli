@@ -56,7 +56,9 @@ export const SearchBox = () => {
           />
         </div>
         <form onSubmit={(e) => handleSubmit(e)}>
+
           <input
+            aria-label="Buscar productos, marcas y más"
             type="text"
             id="serach_input"
             name="search"

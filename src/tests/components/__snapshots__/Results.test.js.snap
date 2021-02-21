@@ -8,6 +8,7 @@ Array [
     >
       <img
         alt="loader"
+        oading="lazy"
         src="loader.gif"
       />
     </div>

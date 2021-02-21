@@ -28,7 +28,7 @@ export const Product = (props) => {
             <div className="product-container">
               <div className="product-card">
                 <div>
-                  <img src={product.picture} alt={product.name} />
+                  <img className="imgpicture" loading="lazy" src={product.picture} alt="product" />
                 </div>
                 <div className="product-info">
                   <div className="product-state">
@@ -45,7 +45,7 @@ export const Product = (props) => {
                                         && <img src={iconShipping} alt="free_shipping" title="Envío gratis" />}
                   </div>
                   <div className="buy-button-container">
-                    <button type="button">Comprar</button>
+                    <button tabIndex="0" type="button">Comprar</button>
                   </div>
                 </div>
               </div>
@@ -58,7 +58,7 @@ export const Product = (props) => {
         )
         : (
           <div className="loader">
-            <img src={loader} alt="loader" />
+            <img loading="lazy" src={loader} alt="loader" />
           </div>
         )}
     </div>
