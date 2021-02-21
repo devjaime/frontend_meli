@@ -6,13 +6,19 @@ Array [
     className="header"
   >
     <div>
-      <img
-        alt="logo_ml"
-        className="meli-logo"
+      <div
         onClick={[Function]}
-        src="logo_ml.png"
-        title="Mercado Libre - Donde comprar y vender de todo"
-      />
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <img
+          alt="logo_ml"
+          className="meli-logo"
+          src="logo_ml.png"
+          title="Mercado Libre - Donde comprar y vender de todo"
+        />
+      </div>
       <form
         onSubmit={[Function]}
       >
@@ -24,7 +30,9 @@ Array [
           type="text"
           value=""
         />
-        <button>
+        <button
+          type="submit"
+        >
           <img
             alt="ic_search"
             src="ic_search.png"
