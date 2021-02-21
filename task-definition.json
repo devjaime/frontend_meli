@@ -1,0 +1,13 @@
+{
+    "ipcMode": null,
+    "executionRoleArn": "arn:aws:iam::639393638525:role/ecsTaskExecutionRole",
+    "containerDefinitions": [{
+                "dnsSearchDomains": null,
+                "environmentFiles": null,
+                "logConfiguration": {
+                    "logDriver": "awslogs",
+                    "secretOptions": null,
+                    "options": {
+                        "awslogs-group": "/ecs/DeploymentContainer",
+                        "awslogs-region": "us-east-2",
+                        "awslogs-stream-prefix": "ecs"
