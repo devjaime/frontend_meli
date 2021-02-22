@@ -15,7 +15,6 @@
             padding: 10px;
             border: none;
             width: 100%;
-            // avoid border appearence when input has been clicked
             &:focus {
                 outline: none;
             }
@@ -31,5 +30,5 @@
 
 .meli-logo {
     padding-right: 10px;
-    cursor: pointer; //let the user know that this image is clickable
+    cursor: pointer;
 }
